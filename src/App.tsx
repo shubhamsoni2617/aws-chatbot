@@ -27,6 +27,7 @@ console.error(errors)
       handleSendMessage={sendMessage}
       isLoading={isLoading}
     />
+    
  </View>
   )
 }
