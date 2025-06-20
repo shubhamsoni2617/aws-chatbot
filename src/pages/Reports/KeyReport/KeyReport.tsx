@@ -130,31 +130,31 @@ const KeyReportComponent = () => {
   const costOfVacancyTableData = getCostOfVacancyTableData(turnoverCostData);
   const pdiTableData = getPerformnceDeficitImpact(performanceDefecitImpactData);
 
-  const handleMenuClick: MenuProps["onClick"] = (e) => {
-    // Prepare data for export functions
-    const exportData = {
-      reportsRecommendation: reportsRecommendation || [],
-      currentQuarter,
-      perviousQuarter,
-      turnoverTableData,
-      absenteeismRateTableData,
-      retentionRateTableData,
-      firstYearRetentionRateTableData,
-      internalMobilityRateTableData,
-      costOfVacancyTableData,
-      turnoverCostTableData,
-      pdiTableData,
-      absenteeismCostTableData,
-      keyReportsComment,
-      profileData,
-    };
+  // const handleMenuClick: MenuProps["onClick"] = (e) => {
+  //   // Prepare data for export functions
+  //   const exportData = {
+  //     reportsRecommendation: reportsRecommendation || [],
+  //     currentQuarter,
+  //     perviousQuarter,
+  //     turnoverTableData,
+  //     absenteeismRateTableData,
+  //     retentionRateTableData,
+  //     firstYearRetentionRateTableData,
+  //     internalMobilityRateTableData,
+  //     costOfVacancyTableData,
+  //     turnoverCostTableData,
+  //     pdiTableData,
+  //     absenteeismCostTableData,
+  //     keyReportsComment,
+  //     profileData,
+  //   };
 
-    if (e.key === "excel") {
-      exportToExcel(exportData);
-    } else {
-      exportToPDF(exportData);
-    }
-  };
+  //   if (e.key === "excel") {
+  //     exportToExcel(exportData);
+  //   } else {
+  //     exportToPDF(exportData);
+  //   }
+  // };
 
   return (
     <Spin spinning={isRecommendationLoading && isKeyReportCommentLoading}>

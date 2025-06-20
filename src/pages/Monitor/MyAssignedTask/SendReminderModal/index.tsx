@@ -3,13 +3,13 @@ import {
   Badge,
   DatePicker,
   DatePickerProps,
-  Dropdown,
+  // Dropdown,
   Input,
-  Menu,
+  // Menu,
   MenuProps,
   Modal,
   Select,
-  Space,
+  // Space,
   Spin,
 } from "antd";
 import { DownOutlined, UpOutlined, UserOutlined } from "@ant-design/icons";
@@ -242,20 +242,20 @@ const SendReminderModal = (props: SendReminderModal) => {
   };
 
   // Update menuProps with new click handlers
-  const menuProps1 = {
-    items: items,
-    onClick: handleTaskStatusClick,
-  };
+  // const menuProps1 = {
+  //   items: items,
+  //   onClick: handleTaskStatusClick,
+  // };
 
-  const menuProps2 = {
-    items: items2,
-    onClick: handlePriorityClick,
-  };
+  // const menuProps2 = {
+  //   items: items2,
+  //   onClick: handlePriorityClick,
+  // };
 
-  const menuProps3 = {
-    items: items3,
-    onClick: handleAssignedToClick,
-  };
+  // const menuProps3 = {
+  //   items: items3,
+  //   onClick: handleAssignedToClick,
+  // };
 
   const handleSendReminderClick = async () => {
     const formdata = new FormData();
