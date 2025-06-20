@@ -1,25 +1,10 @@
 import { useEffect, useState } from "react";
-import { MenuProps, Spin } from "antd";
+import { Spin } from "antd";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
-import {
-  getCurrentQuarterNumber,
-} from "@/utils/helper/CurrentQuarterGraphHelper";
 import { getKeyReportComment } from "@/store/actions";
-import { exportToExcel, exportToPDF } from "./utils/exportUtils";
 import CommentOnReportModal from "./CommentOnReportModal";
 import Notification from "@/components/Notification";
-import {
-  getAbsenteeismRateTableParameters,
-  getInternalMobilityRateTableData,
-  getRetentionRateTableData,
-  getTurnoverRateTableParameters,
-} from "./Tables/CompanyPerformceMatricsTable/helperFunction";
-import {
-  getAbsenteeismCost,
-  getCostOfVacancyTableData,
-  getPerformnceDeficitImpact,
-  getTurnoverCostTableData,
-} from "./Tables/FinancialImpactMatricsTable/helper";
+
 
 import KeyReportCommentSection from "./components/keyReportCommentSection";
 import CommentOnReportButton from "./components/CommentOnReportButton";
@@ -98,37 +83,37 @@ const KeyReportComponent = () => {
   }, []);
 
   // Get all the table data
-  const {
-    turnoverRate,
-    absenteesimRate,
-    retentionRate,
-    firstYearRetentionRate,
-  } = useAppSelector((store) => store.companyPerformanceData);
+  // const {
+  //   turnoverRate,
+  //   absenteesimRate,
+  //   retentionRate,
+  //   firstYearRetentionRate,
+  // } = useAppSelector((store) => store.companyPerformanceData);
 
-  const {
-    absenteesimCostData,
-    turnoverCostData,
-    performanceDefecitImpactData,
-  } = useAppSelector((store) => store.financiaImpact);
+  // const {
+  //   absenteesimCostData,
+  //   turnoverCostData,
+  //   performanceDefecitImpactData,
+  // } = useAppSelector((store) => store.financiaImpact);
 
-  const currentYear = new Date().getFullYear();
-  const perviousQuarterNumber =
-    getCurrentQuarterNumber() === 1 ? 4 : getCurrentQuarterNumber() - 1;
-  const perviousQuarter =
-    "Q" +
-    perviousQuarterNumber +
-    " " +
-    (perviousQuarterNumber === 4 ? currentYear - 1 : currentYear);
+  // const currentYear = new Date().getFullYear();
+  // const perviousQuarterNumber =
+  //   getCurrentQuarterNumber() === 1 ? 4 : getCurrentQuarterNumber() - 1;
+  // const perviousQuarter =
+  //   "Q" +
+  //   perviousQuarterNumber +
+  //   " " +
+  //   (perviousQuarterNumber === 4 ? currentYear - 1 : currentYear);
 
-  const turnoverTableData = getTurnoverRateTableParameters(turnoverRate);
-  const absenteeismRateTableData = getAbsenteeismRateTableParameters(absenteesimRate);
-  const retentionRateTableData = getRetentionRateTableData(retentionRate, "retention_rate");
-  const firstYearRetentionRateTableData = getRetentionRateTableData(firstYearRetentionRate, "first_year_retention_rate");
-  const internalMobilityRateTableData = getInternalMobilityRateTableData(null);
-  const absenteeismCostTableData = getAbsenteeismCost(absenteesimCostData);
-  const turnoverCostTableData = getTurnoverCostTableData(turnoverCostData);
-  const costOfVacancyTableData = getCostOfVacancyTableData(turnoverCostData);
-  const pdiTableData = getPerformnceDeficitImpact(performanceDefecitImpactData);
+  // const turnoverTableData = getTurnoverRateTableParameters(turnoverRate);
+  // const absenteeismRateTableData = getAbsenteeismRateTableParameters(absenteesimRate);
+  // const retentionRateTableData = getRetentionRateTableData(retentionRate, "retention_rate");
+  // const firstYearRetentionRateTableData = getRetentionRateTableData(firstYearRetentionRate, "first_year_retention_rate");
+  // const internalMobilityRateTableData = getInternalMobilityRateTableData(null);
+  // const absenteeismCostTableData = getAbsenteeismCost(absenteesimCostData);
+  // const turnoverCostTableData = getTurnoverCostTableData(turnoverCostData);
+  // const costOfVacancyTableData = getCostOfVacancyTableData(turnoverCostData);
+  // const pdiTableData = getPerformnceDeficitImpact(performanceDefecitImpactData);
 
   // const handleMenuClick: MenuProps["onClick"] = (e) => {
   //   // Prepare data for export functions

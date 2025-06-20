@@ -36,35 +36,35 @@ interface SendReminderModal {
   heading: any;
 }
 
-const items: MenuProps["items"] = [
-  {
-    key: "1",
-    label: <Badge status="error" text="Pending" />,
-  },
-  {
-    key: "2",
-    label: <Badge status="warning" text="In Progress" />,
-  },
-  {
-    key: "3",
-    label: <Badge status="success" text="Completed" />,
-  },
-];
+// const items: MenuProps["items"] = [
+//   {
+//     key: "1",
+//     label: <Badge status="error" text="Pending" />,
+//   },
+//   {
+//     key: "2",
+//     label: <Badge status="warning" text="In Progress" />,
+//   },
+//   {
+//     key: "3",
+//     label: <Badge status="success" text="Completed" />,
+//   },
+// ];
 
-const items2: MenuProps["items"] = [
-  {
-    key: "1",
-    label: <Badge status="error" text="High" />,
-  },
-  {
-    key: "2",
-    label: <Badge status="warning" text="Medium" />,
-  },
-  {
-    key: "3",
-    label: <Badge status="success" text="Low" />,
-  },
-];
+// const items2: MenuProps["items"] = [
+//   {
+//     key: "1",
+//     label: <Badge status="error" text="High" />,
+//   },
+//   {
+//     key: "2",
+//     label: <Badge status="warning" text="Medium" />,
+//   },
+//   {
+//     key: "3",
+//     label: <Badge status="success" text="Low" />,
+//   },
+// ];
 
 interface AssignToCustomLabelProps {
   email: string;
@@ -148,34 +148,34 @@ const SendReminderModal = (props: SendReminderModal) => {
   const [isAssignedToOpen, setIsAssignedToOpen] = useState(false);
 
   // Modify handleMenuClick to handle different dropdowns
-  const handleTaskStatusClick: MenuProps["onClick"] = (e) => {
-    const selectedItem = items.find(
-      (item: any) => item && "key" in item && item.key === e.key
-    );
-    if (
-      selectedItem &&
-      "label" in selectedItem &&
-      selectedItem.label &&
-      typeof selectedItem.label === "object" &&
-      React.isValidElement(selectedItem.label) &&
-      selectedItem.label.props &&
-      selectedItem.label.props.text
-    ) {
-      setTaskStatus(selectedItem.label.props.text);
-      console.log(
-        taskStatusHelperObject?.[
-          selectedItem.label.props.text as keyof typeof taskStatusHelperObject
-        ]
-      );
-    } else if (
-      selectedItem &&
-      "label" in selectedItem &&
-      typeof selectedItem.label === "string"
-    ) {
-      setTaskStatus(selectedItem.label);
-      // console.log(selectedItem.label);
-    }
-  };
+  // const handleTaskStatusClick: MenuProps["onClick"] = (e) => {
+  //   const selectedItem = items.find(
+  //     (item: any) => item && "key" in item && item.key === e.key
+  //   );
+  //   if (
+  //     selectedItem &&
+  //     "label" in selectedItem &&
+  //     selectedItem.label &&
+  //     typeof selectedItem.label === "object" &&
+  //     React.isValidElement(selectedItem.label) &&
+  //     selectedItem.label.props &&
+  //     selectedItem.label.props.text
+  //   ) {
+  //     setTaskStatus(selectedItem.label.props.text);
+  //     console.log(
+  //       taskStatusHelperObject?.[
+  //         selectedItem.label.props.text as keyof typeof taskStatusHelperObject
+  //       ]
+  //     );
+  //   } else if (
+  //     selectedItem &&
+  //     "label" in selectedItem &&
+  //     typeof selectedItem.label === "string"
+  //   ) {
+  //     setTaskStatus(selectedItem.label);
+  //     // console.log(selectedItem.label);
+  //   }
+  // };
 
   const onStartDateChange: DatePickerProps["onChange"] = (date) => {
     if (date) {
@@ -193,53 +193,53 @@ const SendReminderModal = (props: SendReminderModal) => {
     }
   };
 
-  const handlePriorityClick: MenuProps["onClick"] = (e) => {
-    const selectedItem = items2.find(
-      (item) => item && "key" in item && item.key === e.key
-    );
-    if (selectedItem && "label" in selectedItem && selectedItem.label) {
-      if (
-        typeof selectedItem.label === "object" &&
-        React.isValidElement(selectedItem.label) &&
-        selectedItem.label.props &&
-        selectedItem.label.props.text
-      ) {
-        setPriority(selectedItem.label.props.text);
-      } else if (typeof selectedItem.label === "string") {
-        setPriority(selectedItem.label);
-      }
-    }
-  };
+  // const handlePriorityClick: MenuProps["onClick"] = (e) => {
+  //   const selectedItem = items2.find(
+  //     (item) => item && "key" in item && item.key === e.key
+  //   );
+  //   if (selectedItem && "label" in selectedItem && selectedItem.label) {
+  //     if (
+  //       typeof selectedItem.label === "object" &&
+  //       React.isValidElement(selectedItem.label) &&
+  //       selectedItem.label.props &&
+  //       selectedItem.label.props.text
+  //     ) {
+  //       setPriority(selectedItem.label.props.text);
+  //     } else if (typeof selectedItem.label === "string") {
+  //       setPriority(selectedItem.label);
+  //     }
+  //   }
+  // };
 
-  const handleAssignedToClick: MenuProps["onClick"] = (e) => {
-    const selectedItem = items3.find((item: any) => item?.key === e.key) as any;
-    if (selectedItem && "label" in selectedItem && selectedItem.label) {
-      // console.log(selectedItem?.label?.props?.email)
-      if (
-        typeof selectedItem.label === "object" &&
-        React.isValidElement(selectedItem.label)
-      ) {
-        setEmail(selectedItem.label.props?.email);
-      }
-      // If label is a React element, you may want to display a name instead of the whole element
-      // For now, fallback to a default string or extract the name if possible
-      if (typeof selectedItem.label === "string") {
-        console.log(selectedItem);
-        setAssignedTo(selectedItem.label);
-      } else if (
-        typeof selectedItem.label === "object" &&
-        React.isValidElement(selectedItem.label) &&
-        selectedItem.label.props &&
-        selectedItem.label.props.name
-      ) {
-        setAssignedTo(selectedItem.label.props.name);
-      } else {
-        setAssignedTo("Assign To");
-      }
-    } else {
-      setAssignedTo("Assign To");
-    }
-  };
+  // const handleAssignedToClick: MenuProps["onClick"] = (e) => {
+  //   const selectedItem = items3.find((item: any) => item?.key === e.key) as any;
+  //   if (selectedItem && "label" in selectedItem && selectedItem.label) {
+  //     // console.log(selectedItem?.label?.props?.email)
+  //     if (
+  //       typeof selectedItem.label === "object" &&
+  //       React.isValidElement(selectedItem.label)
+  //     ) {
+  //       setEmail(selectedItem.label.props?.email);
+  //     }
+  //     // If label is a React element, you may want to display a name instead of the whole element
+  //     // For now, fallback to a default string or extract the name if possible
+  //     if (typeof selectedItem.label === "string") {
+  //       console.log(selectedItem);
+  //       setAssignedTo(selectedItem.label);
+  //     } else if (
+  //       typeof selectedItem.label === "object" &&
+  //       React.isValidElement(selectedItem.label) &&
+  //       selectedItem.label.props &&
+  //       selectedItem.label.props.name
+  //     ) {
+  //       setAssignedTo(selectedItem.label.props.name);
+  //     } else {
+  //       setAssignedTo("Assign To");
+  //     }
+  //   } else {
+  //     setAssignedTo("Assign To");
+  //   }
+  // };
 
   // Update menuProps with new click handlers
   // const menuProps1 = {
