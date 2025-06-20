@@ -1,0 +1,24 @@
+.SaveReportModalTitle {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.008em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    align-items: center;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    margin-right: auto;
+
+}
+.SaveReportSubTitle{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-weight: 500;
+}

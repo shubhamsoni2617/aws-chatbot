@@ -1,0 +1,91 @@
+{
+    "details": {
+        "bioDescription": "I am a software engineer",
+        "profilePicture": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png",
+        "notification": {
+            "Reports": true,
+            "Sound": false,
+            "Vibration": true
+        },
+        "contactInformation": {
+            "companyName": "ABC Corporation",
+            "contactID": "1234567890",
+            "contactStatus": "Active",
+            "contactStartDate": "January 1, 2023",
+            "contactEndDate": "December 31, 2023"
+        },
+        "userRole": "Admin"
+    },
+    "security": {
+        "leadersList": [
+            {
+                "name": "John Brown",
+                "position": "CEO"
+            },
+            {
+                "name": "Jim Green",
+                "position": "CFO"
+            },
+            {
+                "name": "Joe Black",
+                "position": "COO"
+            }
+        ],
+        "departmentList": {
+            "Marketing": {
+                "department": "Marketing",
+                "head": "Bob Johnson",
+                "marketingList": [
+                    {
+                        "name": "Alice Smith",
+                        "department": "Engineering"
+                    },
+                    {
+                        "name": "Bob Johnson",
+                        "department": "Marketing"
+                    },
+                    {
+                        "name": "Charlie Davis",
+                        "department": "Sales"
+                    }
+                ]
+            },
+            "Sales": {
+                "department": "Sales",
+                "head": "David Green",
+                "marketingList": [
+                    {
+                        "name": "Alice Smith",
+                        "department": "Engineering"
+                    },
+                    {
+                        "name": "Bob Johnson",
+                        "department": "Marketing"
+                    },
+                    {
+                        "name": "Charlie Davis",
+                        "department": "Sales"
+                    }
+                ]
+            },
+            "IT": {
+                "department": "IT",
+                "head": "Robert Black",
+                "marketingList": [
+                    {
+                        "name": "Alice Smith",
+                        "department": "Engineering"
+                    },
+                    {
+                        "name": "Bob Johnson",
+                        "department": "Marketing"
+                    },
+                    {
+                        "name": "Charlie Davis",
+                        "department": "Sales"
+                    }
+                ]
+            }
+        }
+    }
+}

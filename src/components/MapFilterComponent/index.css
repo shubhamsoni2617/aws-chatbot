@@ -1,0 +1,37 @@
+.custom-rounded-select .ant-select-selector {
+    border-radius: 25px !important;
+    /* height: 37px !important; optional: keep your height setting */
+    height: 36px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    z-index: 1 !important;
+    /* padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px; */
+  }
+
+  .custom-rounded-select{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* flex */
+  }
+
+  .filter-collapse .ant-collapse-content {
+    border-top: none;
+    margin-top: 5px;
+    position: relative;
+    z-index: 999;
+  }
+
+  /* Scoped to only your custom select dropdown */
+/* .custom-select-dropdown .ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+  background-color: #f0e5fc !important;
+  color: #c847e8 !important;
+} */
+
+  

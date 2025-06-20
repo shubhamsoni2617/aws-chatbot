@@ -1,0 +1,14 @@
+.card {
+    display: flex;
+    justify-content: space-between; /* Optional: spaces items evenly */
+    width: 100%; /* Ensures the parent container spans the full width */
+    gap: 100;
+  }
+  
+  @media (max-width: 768px){
+    .card{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+  }

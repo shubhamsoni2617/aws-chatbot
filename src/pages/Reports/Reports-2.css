@@ -1,0 +1,12 @@
+
+ .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+   color: #363636 !important; 
+}
+.ant-tabs-ink-bar {
+    position: absolute;
+    background: #C847EF !important;
+    pointer-events: none;
+ }
+ .ant-table-column-sorter {
+   visibility: collapse;
+   }

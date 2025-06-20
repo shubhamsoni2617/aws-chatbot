@@ -1,0 +1,22 @@
+.highcharts-point-select {
+    fill: #fff;
+  }
+  .tooltip-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip-link {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 5px;
+    z-index: 1;
+  }
+  
+  .tooltip-container:hover .tooltip-link {
+    display: block;
+  }

@@ -1,0 +1,31 @@
+.am5-bullet {
+  cursor: pointer !important;
+}
+
+.zoom-controls {
+  position: absolute;
+  right: 0px;
+  bottom: -30px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 999;
+}
+
+.zoom-button {
+  width: 30px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  transition: background-color 0.2s;
+}
+
+.zoom-button:hover {
+  background: rgba(255, 255, 255, 1);
+}

@@ -1,0 +1,260 @@
+{
+    "internalMobilityRate": {
+      "companyAverage": "68%",
+      "predictedValue": "87%",
+      "data": [
+        {
+          "quarter": "Jan-Mar",
+          "2023": 18.9,
+          "2024": 12.4
+        },
+        {
+          "quarter": "Apr-Jun",
+          "2023": 28.8,
+          "2024": 23.2
+        },
+        {
+          "quarter": "Jul-Sep",
+          "2023": 39.3,
+          "2024": 34.5
+        },
+        {
+          "quarter": "Oct-Dec",
+          "2023": 81.4,
+          "2024": 95.7
+        }
+      ]
+    },
+    "revenuePerEmployeeArea": {
+      "companyAverage": "$2345",
+      "predictedValue": "$2345",
+      "data": [
+        {
+          "quarter": "Jan-Mar",
+          "2023": 18.9,
+          "2024": 12.4
+        },
+        {
+          "quarter": "Apr-Jun",
+          "2023": 28.8,
+          "2024": 23.2
+        },
+        {
+          "quarter": "Jul-Sep",
+          "2023": 39.3,
+          "2024": 34.5
+        },
+        {
+          "quarter": "Oct-Dec",
+          "2023": 81.4,
+          "2024": 95.7
+        }
+      ]
+    },
+    "turnoverRate": {
+      "predictedValue": "40%",
+      "companyAverage": "50%",
+      "data": [
+        {
+          "quarter": "Jan-Mar",
+          "2023": 18.9,
+          "2024": 12.4
+        },
+        {
+          "quarter": "Apr-Jun",
+          "2023": 28.8,
+          "2024": 23.2
+        },
+        {
+          "quarter": "Jul-Sep",
+          "2023": 39.3,
+          "2024": 34.5
+        },
+        {
+          "quarter": "Oct-Dec",
+          "2023": 81.4,
+          "2024": 95.7
+        }
+      ]
+    },
+    "performanceRate": {
+      "companyAverage": "4.1",
+      "predictedValue": "4.2",
+      "data": [
+        {
+          "quarter": "Oct-Dec",
+          "2023": 50.4,
+          "2024": 75.7
+        }
+      ]
+    },
+    "retentionRate": {
+      "companyAverage": "52%",
+      "predictedValue": "40%",
+      "data": [
+        {
+          "quarter": "Jan-Mar",
+          "2023": 18.9,
+          "2024": 12.4
+        },
+        {
+          "quarter": "Apr-Jun",
+          "2023": 28.8,
+          "2024": 23.2
+        },
+        {
+          "quarter": "Jul-Sep",
+          "2023": 39.3,
+          "2024": 34.5
+        },
+        {
+          "quarter": "Oct-Dec",
+          "2023": 81.4,
+          "2024": 95.7
+        }
+      ]
+    },
+    "firstYearRetentionRate": {
+      "companyAverage": "50%",
+      "predictedValue": "40%",
+      "data": [
+        {
+          "quarter": "Jan-Mar",
+          "2023": 18.9,
+          "2024": 12.4
+        },
+        {
+          "quarter": "Apr-Jun",
+          "2023": 28.8,
+          "2024": 23.2
+        },
+        {
+          "quarter": "Jul-Sep",
+          "2023": 39.3,
+          "2024": 34.5
+        },
+        {
+          "quarter": "Oct-Dec",
+          "2023": 81.4,
+          "2024": 95.7
+        }
+      ]
+    },
+    "revenuePerEmployee": {
+      "companyAverage": "$2345",
+      "predictedValue": "$2345",
+      "data": [
+        {
+          "name": "",
+          "values": 1000,
+          "fill": "#fff"
+        },
+        {
+          "name": "2023",
+          "values": 777,
+          "fill": "#A5B4FF"
+        },
+        {
+          "name": "Predicted Value",
+          "values": 805,
+          "fill": "#C847E8"
+        }
+      ]
+    },
+    "absenteeismRate": {
+      "companyAverage": "50%",
+      "predictedValue": "40%",
+      "data": [
+        {
+          "name": "Jan-Mar",
+          "2023": 18.9,
+          "2024": 12.4
+        },
+        {
+          "name": "Apr-Jun",
+          "2023": 28.8,
+          "2024": 23.2
+        },
+        {
+          "name": "Jul-Sep",
+          "2023": 39.3,
+          "2024": 34.5
+        },
+        {
+          "name": "Oct-Dec",
+          "2023": 81.4,
+          "2024": 95.7
+        }
+      ]
+    },
+    "mapData": {
+      "companyAverage": 5.2,
+      "markers": [
+        {
+          "name": "India",
+          "lat": 20.5937,
+          "lon": 78.9629
+        },
+        {
+          "name": "USA",
+          "lat": 37.0902,
+          "lon": -95.7129
+        },
+        {
+          "name": "UK",
+          "lat": 54.0902,
+          "lon": -1.7129
+        },
+        {
+          "name": "New York",
+          "lat": 40.7128,
+          "lon": -74.0060
+        },
+        {
+          "name": "London",
+          "lat": 51.5074,
+          "lon": -0.1278
+        },
+        {
+          "name": "Tokyo",
+          "lat": 35.6895,
+          "lon": 139.6917
+        },
+        {
+          "name": "Sydney",
+          "lat": -33.8688,
+          "lon": 151.2093
+        },
+        {
+          "name": "Paris",
+          "lat": 48.8566,
+          "lon": 2.3522
+        },
+        {
+          "name": "Cape Town",
+          "lat": -33.9249,
+          "lon": 18.4241
+        },
+        {
+          "name": "Moscow",
+          "lat": 55.7558,
+          "lon": 37.6173
+        },
+        {
+          "name": "Beijing",
+          "lat": 39.9042,
+          "lon": 116.4074
+        },
+        {
+          "name": "São Paulo",
+          "lat": -23.5505,
+          "lon": -46.6333
+        },
+        {
+          "name": "Mumbai",
+          "lat": 19.0760,
+          "lon": 72.8777
+        }
+      ]
+    }
+  }

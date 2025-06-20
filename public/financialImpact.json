@@ -1,0 +1,109 @@
+{
+  
+    "currentQuarter": {
+      "amount": "400,000"
+    },
+    "currentYear": {
+      "amount": "400,000"
+    },
+    "previousYear": {
+      "amount": "400,000"
+    },
+  
+
+  "absenteeismCost": {
+    "companyAverage": "£400,000",
+    "predictedValue": "£500,000",
+    "heading":"Absenteeism Cost",
+    "data": [
+      {
+        "quarter": "Jan-Mar",
+        "2023": 18.9,
+        "2024": 12.4
+      },
+      {
+        "quarter": "Apr-Jun",
+        "2023": 28.8,
+        "2024": 23.2
+      },
+      {
+        "quarter": "Jul-Sep",
+        "2023": 39.3,
+        "2024": 34.5
+      },
+      {
+        "quarter": "Oct-Dec",
+        "2023": 81.4,
+        "2024": 95.7
+      }
+    ]
+  },
+
+  "performanceDeficitImpact": {
+    "companyAverage": "£400,000",
+    "predictedValue": "£500,000",
+    "heading" : "Performance Deficit",
+    "data": [
+      {
+        "2023": 81.4,
+        "2024": 95.7
+      }
+    ]
+  },
+
+  "turnOverCost": {
+    "companyAverage": "£400,000",
+    "predictedValue": "£500,000",
+    "heading": "Turnover Cost",
+    "data": [
+      {
+        "quarter": "Jan-Mar",
+        "2023": 18.9,
+        "2024": 12.4
+      },
+      {
+        "quarter": "Apr-Jun",
+        "2023": 28.8,
+        "2024": 23.2
+      },
+      {
+        "quarter": "Jul-Sep",
+        "2023": 39.3,
+        "2024": 34.5
+      },
+      {
+        "quarter": "Oct-Dec",
+        "2023": 81.4,
+        "2024": 95.7
+      }
+    ]
+  },
+
+  "costOfVacancy": {
+    "companyAverage": "£400,000",
+    "predictedValue": "£500,000",
+    "heading" : "Cost Of Vacancy",
+    "data": [
+      {
+        "quarter": "Jan-Mar",
+        "2023": 18.9,
+        "2024": 12.4
+      },
+      {
+        "quarter": "Apr-Jun",
+        "2023": 28.8,
+        "2024": 23.2
+      },
+      {
+        "quarter": "Jul-Sep",
+        "2023": 39.3,
+        "2024": 34.5
+      },
+      {
+        "quarter": "Oct-Dec",
+        "2023": 81.4,
+        "2024": 95.7
+      }
+    ]
+  }
+}

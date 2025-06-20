@@ -1,0 +1,154 @@
+.securityTable {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.SecurityTxt {
+  font-size: 18px;
+  font-weight: 650;
+  line-height: 24px;
+  letter-spacing: -0.008em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.SecurityTxt2 {
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 22.4px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.security-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.leaders-row {
+  margin-top: 32px;
+  margin-bottom: 40px;
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.row2col2-security {
+  margin-left: 110px;
+  max-width: 520px;
+  width: 100%;
+}
+
+.department-row {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.row3col2 {
+  margin-left: 110px;
+}
+
+.TableBody {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16.94px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.parentTable table tbody .ant-table-expanded-row.ant-table-expanded-row-level-1>td {
+  padding: 0px !important;
+}
+
+.nestedTable>div>div>div {
+  width: 100%;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+.customTable .ant-table-tbody>tr>td {
+  border: none
+}
+
+.Buttons {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 20px;
+}
+
+.BtnSaveBtn {
+  height: 40px;
+  padding: 10px 16px 10px 16px;
+  gap: 8px;
+  border-radius: 40px;
+  opacity: 0px;
+  margin-bottom: 10px;
+  background-color: #c847e8;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  order: 1;
+}
+
+.BtnCancelBtn {
+  height: 40px;
+  padding: 10px 16px 10px 16px;
+  gap: 8px;
+  border-radius: 40px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  border-width: 1px;
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.006em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  order: 2;
+}
+
+@media (max-width:1123px) {
+  .security-row {
+    flex-direction: column;
+  }
+
+
+  .leaders-row {
+    flex-direction: column;
+  }
+
+  .department-row {
+    flex-direction: column;
+  }
+
+  .BioDesc {
+    flex-direction: column;
+  }
+
+  .row3col2 {
+    margin-left: 0px;
+  }
+
+  .uploadArea {
+    margin-top: 10px;
+  }
+
+  .Buttons {
+    margin-right: auto;
+    margin-left: 0px;
+  }
+
+  .row2col2-security {
+    margin-left: 0px;
+  }
+
+}

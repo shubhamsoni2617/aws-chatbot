@@ -1,35 +1,76 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-import './App.css'
-import { AIConversation, createAIHooks } from '@aws-amplify/ui-react-ai'
-import { generateClient } from 'aws-amplify/api'
-import type { Schema } from '../amplify/data/resource';
-import { Heading, View } from '@aws-amplify/ui-react'
+import "./App.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { routes } from "./routes";
+import { useFetchData } from "./hooks/useFetchData";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import "./notification.css";
+import { IoCheckmark } from "react-icons/io5";
+import { FaInfo } from "react-icons/fa6";
+// import { RxCrossCircled } from "react-icons/rx";
+import { LuTriangleAlert } from "react-icons/lu";
+import { IoIosCloseCircleOutline } from "react-icons/io";
 
-const client = generateClient<Schema>()
-function App() {
-  const {useAIConversation} = createAIHooks(client);
+import CustomCloseButtonNotification from "./components/CustomCloseButtonNotification";
+// import './toastStyle.css';
 
-  const [ {
-    data:  {messages},
-    isLoading,
-    errors,
-  },
-  sendMessage,
-] = useAIConversation('chat')
-console.error(errors)
+const router = createBrowserRouter(routes);
+
+const App = () => {
+  useFetchData();
+
   return (
- <View flex={1} height="80vh">
-    <Heading level={3}> AI Travel Advisor</Heading>
-    <AIConversation
-      messages={messages}
-      handleSendMessage={sendMessage}
-      isLoading={isLoading}
-    />
-    
- </View>
-  )
-}
+    <>
+      <RouterProvider router={router} />
+      <ToastContainer
+        icon={({ type, theme }) => {
+          // theme is not used in this example but you could
+          console.log("type notification props", type, theme);
+          switch (type) {
+            case "info":
+              return (
+                <FaInfo style={{ color: "indigo", strokeWidth: 2 }} size={24} />
+              );
+            case "error":
+              return (
+                <IoIosCloseCircleOutline
+                  style={{ color: "#DC3545", strokeWidth: 2}}
+                  size={24}
+                />
+              );
+            case "success":
+              return (
+                <IoCheckmark
+                  style={{ color: "#28A745", strokeWidth: 2 }}
+                  size={24}
+                  stroke="#28A745"
+                />
+              );
+            case "warning":
+              return (
+                <LuTriangleAlert
+                  style={{ color: "orange", strokeWidth: 2 }}
+                  size={24}
+                />
+              );
+            default:
+              return null;
+          }
+        }}
+        position="top-right"
+        autoClose={2500}
+        hideProgressBar={true}
+        newestOnTop={false}
+        closeButton={CustomCloseButtonNotification}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        toastClassName="custom-toast custom-toast-body"
+      />
+    </>
+  );
+};
 
-export default App
+export default App;

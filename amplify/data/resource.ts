@@ -1,80 +1,37 @@
-// import { type ClientSchema, a, defineData } from '@aws-amplify/backend';
+import { type ClientSchema, a, defineData } from "@aws-amplify/backend";
 
-/*== STEP 1 ===============================================================
-The section below creates a Todo database table with a "content" field. Try
-adding a new "isDone" field as a boolean. The authorization rule below
-specifies that any unauthenticated user can "create", "read", "update", 
-and "delete" any "Todo" records.
-=========================================================================*/
-// const schema = a.schema({
-//   Todo: a
-//     .model({
-//       content: a.string(),
-//     })
-//     .authorization((allow) => [allow.guest()]),
-// });
+const schema = a
+  .schema({
+    chat: a
+      .conversation({
+        aiModel: a.ai.model("Claude 3 Sonnet"),
+        //  {
+        //     // resourcePath: 'arn:aws:bedrock:eu-north-1:598963873234:inference-profile/eu.amazon.nova-lite-v1:0' // Replace with your actual inference profile ARN
+        //     // arn:aws:bedrock:eu-central-1:598963873234:inference-profile/eu.amazon.nova-lite-v1:0
+        //     resourcePath: 'arn:aws:bedrock:eu-central-1:598963873234:agent/HL0JJFEPQJ',
 
-// export type Schema = ClientSchema<typeof schema>;
+        //   },
+        // systemPrompt:
+        //   "You are a helpful chatbot that gives summary data of the platfrom of Vipani and you name is Vipani AI. Your job is to sive summarised data to user for the information they ask for.",
+        systemPrompt: `
+You are Vipani AI, a smart and helpful chatbot designed to provide users with summarized data and insights about companies available on the Vipani platform. 
+Your primary job is to deliver clear, concise, and accurate summaries based on the specific topic or query the user asks about a particular company.
 
-// export const data = defineData({
-//   schema,
-//   authorizationModes: {
-//     defaultAuthorizationMode: 'identityPool',
-//   },
-// });
+Only provide information that is available on the Vipani platform, and present it in an easy-to-understand format. 
+If a user asks for data that is unavailable, politely inform them.
 
-/*== STEP 2 ===============================================================
-Go to your frontend source code. From your client-side code, generate a
-Data client to make CRUDL requests to your table. (THIS SNIPPET WILL ONLY
-WORK IN THE FRONTEND CODE FILE.)
-
-Using JavaScript or Next.js React Server Components, Middleware, Server 
-Actions or Pages Router? Review how to generate Data clients for those use
-cases: https://docs.amplify.aws/gen2/build-a-backend/data/connect-to-API/
-=========================================================================*/
-
-/*
-"use client"
-import { generateClient } from "aws-amplify/data";
-import type { Schema } from "@/amplify/data/resource";
-
-const client = generateClient<Schema>() // use this Data client for CRUDL requests
-*/
-
-/*== STEP 3 ===============================================================
-Fetch records from the database and use them in your frontend component.
-(THIS SNIPPET WILL ONLY WORK IN THE FRONTEND CODE FILE.)
-=========================================================================*/
-
-/* For example, in a React component, you can use this snippet in your
-  function's RETURN statement */
-// const { data: todos } = await client.models.Todo.list()
-
-// return <ul>{todos.map(todo => <li key={todo.id}>{todo.content}</li>)}</ul>
-
-import { type ClientSchema, a, defineData } from '@aws-amplify/backend';
-
-const schema = a.schema({
-  chat: a.conversation({
-   aiModel: 
-   a.ai.model('Claude 3 Sonnet'),
-  //  { 
-  //     // resourcePath: 'arn:aws:bedrock:eu-north-1:598963873234:inference-profile/eu.amazon.nova-lite-v1:0' // Replace with your actual inference profile ARN
-  //     // arn:aws:bedrock:eu-central-1:598963873234:inference-profile/eu.amazon.nova-lite-v1:0
-  //     resourcePath: 'arn:aws:bedrock:eu-central-1:598963873234:agent/HL0JJFEPQJ',
-
-  //   },
-    systemPrompt: "You are a helpful assistant for a travel advisor"
+Be professional, concise, and always stay on topic.
+`,
+      })
+      .authorization((allow) => allow.owner()),
   })
-  .authorization((allow) => allow.owner()),
-})
-.authorization((allow) => [allow.authenticated()]);
+  .authorization((allow) => [allow.guest()]);
 
 export type Schema = ClientSchema<typeof schema>;
 
 export const data = defineData({
   schema,
-  authorizationModes:{
-    defaultAuthorizationMode:"userPool",
-  }
-})
+  authorizationModes: {
+    defaultAuthorizationMode: "userPool",
+  },
+});

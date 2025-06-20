@@ -1,0 +1,163 @@
+/* LoginForm.css */
+
+.custom-password-input .ant-input {
+  font-size: 16px !important; /* Base font size for input and placeholder */  
+  height: 25px; /* Default Ant Design input height, adjust if needed */
+}
+.ant-input::placeholder {
+  color: #94A3B8 !important;
+  opacity: 1;
+}
+
+.ant-btn .anticon {
+  display: inline-flex;
+  align-items: center;
+}
+/* Style password dots */
+.custom-password-input input[type="password"] {
+  -webkit-text-security: disc !important; /* Ensures dots */  
+  letter-spacing: 2px; /* Optional: Adds spacing between dots for readability */
+  vertical-align: middle; /* Aligns dots properly */
+}
+
+.custom-password-input input[type="password"]:not(:placeholder-shown) {
+  padding-bottom: 0px;
+}
+
+/* Reset placeholder font size */
+.custom-password-input input[type="password"]::placeholder {
+  font-size: 16px !important; /* Keeps placeholder at original size */
+  padding-bottom: 20px !important;
+}
+
+.ant-input {
+  font-size: 16px;
+}
+/* Ensure visible text stays at 16px */
+.custom-password-input input[type="text"] {
+  font-size: 16px !important; /* Visible text size */
+}
+
+/* Prevent input box size increase */
+.custom-password-input .ant-input {
+  padding: 4px 11px; /* Default Ant Design padding, adjust if customized */
+  box-sizing: border-box; /* Ensures padding doesn’t affect size */
+}
+.ant-select-selection-placeholder {
+  color: red;
+}
+
+.forgot-passowrd-text, .forgot-passowrd-text:hover, .forgot-passowrd-text:active {
+  font-family: 'Inter', sans-serif;
+  color:#c847e8;
+}
+.wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .custom-password-input input[type="password"] {
+    -webkit-text-security: disc !important;
+    letter-spacing: 0px;
+    vertical-align: middle;
+}
+.my-input::placeholder {
+  /* Add your styling here, such as font-size, color, etc. */
+  font-size: 16px;
+  color: #888;
+}
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-control.is-invalid {
+    border-color: red;
+  }
+  /* Hover effect */
+.form-control:hover {
+  border-color: #c847e8;
+}
+  
+  .invalid-feedback {
+    color: red;
+    font-size: 12px;
+    margin-top: -8px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .no-hover {
+    background-color: #c847e8 !important;
+    color: white !important;
+  }
+  
+  .no-hover:hover {
+    background-color: #c847e8 !important;
+    color: white !important;
+  }
+  
+  .ant-checkbox-checked .ant-checkbox-inner,
+.ant-checkbox-focused .ant-checkbox-inner {
+  background-color: #c847e8 !important;
+  border-color: #c847e8 !important;
+}
+
+  
+
+  .alert {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+  }
+  
+  .danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+  }
+  
+  .add-margin {
+    margin-top: 20px;
+  }
+
+  .loginFooter{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .rememberMeCheckbox {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', serif;
+  }
+
+  .custom-password-input {
+    color: #c847e8;
+    font-size: 16px;
+  }
+  @media screen and (max-width: 425px) {
+    .loginFooter{
+      flex-direction: column;
+      align-items: center;
+    }
+    .rememberMeCheckbox{
+      margin-bottom: 10px;
+      font-size: "16px";
+      font-weight: 400;
+      /* fontFamily: "'Inter', serif", */
+    }
+
+  }
+  
+
+
+  

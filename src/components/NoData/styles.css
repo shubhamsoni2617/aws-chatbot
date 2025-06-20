@@ -1,0 +1,35 @@
+.noData {
+  min-height: 240px;
+  border-radius: 12px;
+  background-color: #fff;
+  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); */
+  transition: all 0.3s ease;
+  height: 250px;
+}
+
+.icon-container {
+  padding: 16px;
+  border-radius: 50%;
+  /* background-color: rgba(200, 71, 232, 0.1); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.noDataIcon {
+  color: #C847E8;
+  opacity: 0.9;
+}
+
+.noDataTitle {
+  color: #1e293b;
+  font-size: 18px;
+  letter-spacing: -0.01em;
+}
+
+.noDataText {
+  color: #64748b;
+  font-size: 14px;
+  max-width: 200px;
+  margin: 0 auto;
+}

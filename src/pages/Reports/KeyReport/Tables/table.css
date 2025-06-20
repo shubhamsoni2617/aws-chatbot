@@ -1,0 +1,35 @@
+/* Example: override table header padding and height */
+.custom-antd-table .ant-table-thead > tr > th {
+  padding-top: 12.5px;
+  padding-bottom: 12.5px;
+  padding-left: 16px;
+  padding-right: 12.5px;
+  height: 49px; /* or whatever height you prefer */
+  background-color: #f8fafc; /* optional background */
+  font-size: 14px; /* optional font size */
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* .custom-antd-table {
+  border-radius: 8px;
+  border: 1px solid #CBD5E1;
+  
+} */
+
+/* Style for table row borders */
+.custom-antd-table .ant-table-tbody > tr > td {
+  border-bottom: 1px solid #CBD5E1 !important;
+}
+
+/* Style for table header bottom border */
+.custom-antd-table .ant-table-thead > tr > th {
+  border-bottom: 1px solid #CBD5E1 !important;
+}
+
+/* Remove last row border */
+.custom-antd-table .ant-table-tbody > tr:last-child > td {
+  border-bottom: none !important;
+}

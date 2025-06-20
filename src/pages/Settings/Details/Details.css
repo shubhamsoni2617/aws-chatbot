@@ -1,0 +1,370 @@
+.detailsTable {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.ProfileDetailesTxt {
+  font-size: 18px;
+  font-weight: 650;
+  line-height: 24px;
+  letter-spacing: -0.008em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+
+.ProfileDetailesTxt2 {
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 22.4px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.ProfileDetails {
+  display: flex;
+
+  margin-bottom: 10px;
+}
+
+.ExportBtn {
+  width: Hug (140px) px;
+  height: Hug (40px) px;
+  padding: 10px 16px 10px 16px;
+  /* gap: 8px; */
+  border-radius: 40px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  border-width: 1px;
+  /* margin-right: 10px; */
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.006em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.SaveBtn {
+  width: Hug (66px) px;
+  height: Hug (40px) px;
+  padding: 10px 16px 10px 16px;
+  gap: 8px;
+  border-radius: 40px;
+  opacity: 0px;
+  background-color: #c847e8;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.BioDesc {
+  /* display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 2fr;
+  margin-top: 32px; */
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.bio {
+  /* display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 2fr;
+  margin-top: 32px; */
+  display:flex;
+  flex-direction: row;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+
+.BioDescTxt {
+  width: Fill (260px) px;
+  height: Hug (20px) px;
+  gap: 4px;
+  opacity: 0px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.006em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.BioDescTxt2 {
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 22.4px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.ReadOnlyTxt {
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 22.4px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  /* margin-left: 70px; */
+}
+.ant-input:focus {
+  outline-color: #c847e8 !important;
+}
+
+.row2col1 {
+  margin-right: 0px;
+  width: 260px;
+  height: 100px;
+}
+
+.row2col2 {
+  min-height: 172px;
+}
+
+.row3col2 {
+  display: flex;
+
+}
+
+.row5col2 {
+  max-width: 510px;
+}
+
+.Upload-icon {
+  margin-left: auto;
+  margin-right: auto;
+  height: 24px;
+  width: 24px;
+}
+
+.uploadIconSection {
+  background: #EEF2FF;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30;
+  height: 48px;
+  width: 48px;
+  padding-top: 10px;
+  border-radius: 123px;
+}
+
+.Contact-info {
+  /* display: grid;
+  row-gap: 10px; */
+  display: flex;
+  flex-direction: column;
+  width: 520px;
+  height: 202px;
+  border-width: 1px;
+  border-color: #cbd5e1;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.contact-info-row1 {
+  display: flex;
+  grid-column: 1/3;
+}
+
+.contact-Right {
+  /* margin-right:70px; */
+}
+
+.sub-heading {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.006em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+}
+
+.NotificationRow {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1.28fr;
+  margin-top: 32px;
+}
+
+.ContactInfoRow {
+  /* display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1.28fr; */
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  margin-top: 32px;
+  /* width: 520px; */
+}
+
+.UserRole {
+  /* display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 2fr; */
+  display: flex;
+  flex-direction: row;
+  height: 46px;
+  gap:32px;
+  margin-top: 32px
+}
+
+.Buttons {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.row4col2 {
+  margin-left: 0px;
+}
+
+.BtnSaveBtn {
+  height: 40px;
+  padding: 10px 16px 10px 16px;
+  gap: 8px;
+  border-radius: 40px;
+  opacity: 0px;
+  margin-bottom: 10px;
+  background-color: #c847e8;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  order: 1;
+}
+
+.BtnCancelBtn {
+  height: 40px;
+  padding: 10px 16px 10px 16px;
+  gap: 8px;
+  border-radius: 40px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  border-width: 1px;
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.006em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  order: 2;
+}
+
+@media (max-width:1123px) {
+  .ProfileDetails {
+    flex-direction: column;
+  }
+
+  .row1col2 {
+    margin-left: 0px;
+  }
+
+  .BioDesc {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .NotificationRow {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ContactInfoRow {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .UserRole {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row3col2 {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .uploadArea {
+    margin-top: 10px;
+  }
+
+  .Buttons {
+    margin-right: auto;
+    margin-left: 0px;
+  }
+
+  .row2col2 {
+    margin-left: 0px;
+  }
+
+  .row5col2 {
+    margin-top: 32px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .row4col2 {
+    margin-top: 32px;
+  }
+
+  .ReadOnlyTxt {
+    margin-left: 0px;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+
+  .bio {
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 1fr;
+  }
+}
+.bio-textarea {
+  min-height: 172px;
+  width: 520px;
+  margin-bottom: 32px;
+  resize: both;
+  border: 1px solid #CBD5E1;
+}
+
+.bio-textarea:focus {
+  outline: none;
+  border-color: #c847e8;
+  box-shadow: 0 0 0 2px rgba(200, 71, 232, 0.2);
+  caret-color: #c847e8;
+}
+
+.bio-textarea:hover {
+  border-color: #c847e8;
+}
+
+.bio-textarea {
+  border-color: #CBD5E1;
+}
+
+.bio-textarea:active {
+  border-color: #c847e8;
+}
+
+/* Add this to override any default browser styles */
+.bio-textarea::selection {
+  background-color: rgba(200, 71, 232, 0.2);
+}
+
+/* Override Ant Design's default focus styles if you're using antd */
+.bio-textarea.ant-input:focus {
+  border-color: #c847e8 !important;
+  box-shadow: 0 0 0 2px rgba(200, 71, 232, 0.2) !important;
+}

@@ -1,0 +1,13 @@
+.custom-no-border-select .ant-select-selector {
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+  }
+
+  .custom-no-border-select .ant-select-selector .ant-select-selection-item{
+    color: #c847e8 !important
+  }
+
+.custom-no-border-select .ant-select-selector .ant-select-selection-placeholder {
+  color: #c847e8 !important;
+}

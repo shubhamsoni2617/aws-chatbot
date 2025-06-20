@@ -1,0 +1,39 @@
+{
+    "predictiveAnalyticsData": {
+      "companyName": "McDonald's ",
+      "turnoverForecast": {
+        "chartData": [
+          { "name": "Jan-Mar", "2023": 18.9, "2024": 12.4 },
+          { "name": "Apr-Jun", "2023": 28.8, "2024": 23.2 },
+          { "name": "Jul-Sep", "2023": 39.3, "2024": 34.5 },
+          { "name": "Oct-Dec", "2023": 81.4, "2024": 95.7 }
+        ],
+        "regionalStats": [
+          { "region": "United States", "status": "Stable at", "percentage": 12 },
+          { "region": "United Kingdom", "status": "Stable at", "percentage": 13 },
+          { "region": "Germany", "status": "Projected Increase to", "percentage": 17 },
+          { "region": "Brazil", "status": "Projected Increase to", "percentage": 17 },
+          { "region": "China", "status": "Stable at", "percentage": 15 }
+        ],
+        "analysis": "Turnover is expected to increase in Germany and Brazil without intervention, primarily due to low engagement and poor retention initiatives."
+      },
+      "engagementProductivityCorrelation": {
+        "details": [
+          {
+            "id": 1,
+            "region": "United States and United Kingdom",
+            "correlation": 0.85,
+            "description": "Strong correlation of 0.85 between engagement and productivity."
+          },
+          {
+            "id": 2,
+            "region": "Germany and Brazil",
+            "correlation": 0.6,
+            "description": "Moderate correlation of 0.6, reflecting the need for stronger engagement initiatives to improve productivity."
+          }
+        ],
+        "analysis": "Higher engagement in the United States and the United Kingdom is driving productivity, while lower engagement in Germany and Brazil suggests underutilisation of workforce potential."
+      }
+    }
+  }
+  

@@ -1,0 +1,22 @@
+.custom-modal .ant-modal-content {
+  padding: 20px !important;
+}
+
+.custom-modal .ant-modal-header {
+  padding: 0 !important;
+  margin-bottom: 20px !important;
+}
+
+.custom-modal .ant-modal-body {
+  padding: 0 !important;
+  /* width: 580px !important; */
+}
+
+.custom-modal{
+     width: 580px !important;
+     border-radius: 12px !important;
+}
+
+.ant-modal-content{
+    border-radius: 12px !important;
+}

@@ -1,0 +1,28 @@
+/* toastStyles.css */
+.custom-toast {
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-weight: 500;
+  padding: 12px 16px;
+}
+
+.custom-toast-body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* React Toastify uses classes like these for types */
+.Toastify__toast--success {
+  background-color: #fff !important;
+  color: #c847e8 !important;
+}
+
+.Toastify__toast--error {
+  background-color: #fff !important;
+  color: #c847e8;
+}
+
+.Toastify__toast--warning {
+  background-color: #fff !important;
+  color: #c847e8;
+  
+}

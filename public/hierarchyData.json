@@ -1,0 +1,186 @@
+{
+  "nodes": [
+    {
+      "id": "0",
+      "data": {
+        "email": "ejoplin@yoyodyne.com",
+        "fax": "555-0101",
+        "name": "Eric Joplin",
+        "phone": "555-0100",
+        "position": "Chief Executive Officer",
+        "status": "online"
+      }
+    },
+    {
+      "id": "1",
+      "data": {
+        "email": "groberts@yoyodyne.com",
+        "fax": "555-0101",
+        "name": "Gary Roberts",
+        "phone": "555-0100",
+        "position": "Chief Executive Assistant",
+        "status": "busy"
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "email": "aburns@yoyodyne.com",
+        "fax": "555-0103",
+        "name": "Alex Burns",
+        "phone": "555-0102",
+        "position": "Senior Executive Assistant",
+        "status": "offline"
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "email": "msmith@yoyodyne.com",
+        "fax": "555-0115",
+        "name": "Mary Smith Jonson",
+        "phone": "555-0114",
+        "position": "Finance Manager",
+        "status": "busy"
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "email": "msmith@yoyodyne.com",
+        "fax": "555-0115",
+        "name": "Mary Smith",
+        "phone": "555-0114",
+        "position": "Finance Manager",
+        "status": "busy"
+      }
+    },
+    {
+      "id": "5",
+      "data": {
+        "email": "bwhite@yoyodyne.com",
+        "fax": "555-0117",
+        "name": "Bob White",
+        "phone": "555-0116",
+        "position": "HR Manager",
+        "status": "online"
+      }
+    },
+    {
+      "id": "6",
+      "data": {
+        "email": "jjones@yoyodyne.com",
+        "fax": "555-0119",
+        "name": "John Jones",
+        "phone": "555-0118",
+        "position": "IT Manager",
+        "status": "offline"
+      }
+    },
+    {
+      "id": "7",
+      "data": {
+        "email": "klee@yoyodyne.com",
+        "fax": "555-0121",
+        "name": "Karen Lee",
+        "phone": "555-0120",
+        "position": "Marketing Manager",
+        "status": "online"
+      }
+    },
+    {
+      "id": "10",
+      "data": {
+        "email": "tadams@yoyodyne.com",
+        "fax": "555-0127",
+        "name": "Tom Adams",
+        "phone": "555-0126",
+        "position": "Product Manager",
+        "status": "online"
+      }
+    },
+    {
+      "id": "11",
+      "data": {
+        "email": "wbrown@yoyodyne.com",
+        "fax": "555-0129",
+        "name": "Will Brown",
+        "phone": "555-0128",
+        "position": "Customer Support Manager",
+        "status": "busy"
+      }
+    },
+    {
+      "id": "14",
+      "data": {
+        "email": "charris@yoyodyne.com",
+        "fax": "555-0135",
+        "name": "Cathy Harris",
+        "phone": "555-0134",
+        "position": "Procurement Manager",
+        "status": "busy"
+      }
+    },
+    {
+      "id": "15",
+      "data": {
+        "email": "eblack@yoyodyne.com",
+        "fax": "555-0137",
+        "name": "Evan Black",
+        "phone": "555-0136",
+        "position": "Logistics Manager",
+        "status": "offline"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "0",
+      "target": "1"
+    },
+    {
+      "source":"0",
+      "target":"2"
+    },
+    {
+      "source":"1",
+      "target":"3"
+    },
+    {
+      "source":"1",
+      "target":"4"
+    },
+    {
+      "source":"2",
+      "target":"5"
+    },
+    {
+      "source":"3",
+      "target":"6"
+    },
+    {
+      "source":"3",
+      "target":"7"
+    },
+    {
+      "source":"4",
+      "target":"10"
+    },
+    {
+      "source":"4",
+      "target":"11"
+    },
+    
+    {
+      "source":"5",
+      "target":"14"
+    },
+    {
+      "source":"5",
+      "target":"15"
+    }
+    
+
+    
+  ]
+}

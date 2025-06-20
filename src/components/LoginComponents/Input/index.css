@@ -1,0 +1,30 @@
+.styled-input {
+  border: 1px solid #c4c4c4;
+  height: 44px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Inter", serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.styled-input input {
+  height: 30px;
+}
+
+.styled-input:hover {
+  border: 1px solid #c847e8; /* Change border on hover */
+}
+
+.styled-input:focus-within {
+  border: 1px solid #c847e8; /* Change border when focused */
+  /* box-shadow: 0 0 0 2px rgba(200, 71, 232, 0.2); Optional shadow effect */
+}
+
+.styled-input:focus-within input {
+  outline: none; /* Remove default input outline */
+}
+
+.styled-input:-webkit-autofill {
+  background-color: red !important;
+}

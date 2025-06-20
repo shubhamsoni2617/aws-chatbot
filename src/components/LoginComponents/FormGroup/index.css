@@ -1,0 +1,16 @@
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: var(--spacing); /* Replace with actual spacing value from your theme */
+  }
+  
+  .form-group.inline {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .form-group.inline > * {
+    margin: 0 4px;
+  }
+  

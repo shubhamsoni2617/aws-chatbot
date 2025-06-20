@@ -1,0 +1,94 @@
+{
+    "costOfVacancy": {
+        "heading": "Cost of Vacancy",
+        "companyAverage": "68%",
+        "predictedValue": "87%",
+        "overView": "Cost Of Vacancy Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.",
+        "data": [
+            {
+                "quarter": "Jan-Mar",
+                "2023": 18.9,
+                "2024": 12.4
+            },
+            {
+                "quarter": "Apr-Jun",
+                "2023": 28.8,
+                "2024": 23.2
+            },
+            {
+                "quarter": "Jul-Sep",
+                "2023": 39.3,
+                "2024": 34.5
+            },
+            {
+                "quarter": "Oct-Dec",
+                "2023": 81.4,
+                "2024": 95.7
+            }
+        ]
+    },
+    "performanceDeficitImpact": {
+        "heading": "Performance Deficit Impact",
+        "companyAverage": "4.1",
+        "predictedValue": "4.2",
+        "overView": "Performance Deficit Impact Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.",
+        "data":[
+            {
+                "quarter": "Oct-Dec",
+                "2023": 50.4,
+                "2024": 75.7
+            }
+        ]
+    },
+    "revenuePerEmployee": {
+        "heading": "Revenue Per Employee",
+        "companyAverage": "$2345",
+        "predictedValue": "$2345",
+        "overView": "Revenue Per Employee Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.",
+        "data": [
+            {
+                "name": "",
+                "values": 1000,
+                "fill": "#fff"
+            },
+            {
+                "name": "2023",
+                "values": 777,
+                "fill": "#A5B4FF"
+            },
+            {
+                "name": "Predicted Value",
+                "values": 805,
+                "fill": "#C847E8"
+            }
+        ]
+    },
+    "turnoverRate": {
+        "heading": "Turnover Rate",
+        "predictedValue": "40%",
+        "companyAverage": "50%",
+        "overView": "Turnover Rate Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.",
+        "data": [
+            {
+                "quarter": "Jan-Mar",
+                "2023": 18.9,
+                "2024": 12.4
+            },
+            {
+                "quarter": "Apr-Jun",
+                "2023": 28.8,
+                "2024": 23.2
+            },
+            {
+                "quarter": "Jul-Sep",
+                "2023": 39.3,
+                "2024": 34.5
+            },
+            {
+                "quarter": "Oct-Dec",
+                "2023": 81.4,
+                "2024": 95.7
+            }
+        ]
+    }
+}

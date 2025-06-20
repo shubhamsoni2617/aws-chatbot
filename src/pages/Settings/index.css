@@ -1,0 +1,8 @@
+/* Applies 32px padding to tab content */
+.tab .ant-tabs-content-holder {
+  padding-top: 22px;
+  /* margin-bottom: 0px; */
+}
+
+/* Optional: Makes tab headers also have 32px height (visually larger) */
+
