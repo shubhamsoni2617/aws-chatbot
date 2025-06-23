@@ -2,7 +2,7 @@
 import { AIConversation, createAIHooks } from '@aws-amplify/ui-react-ai'
 import { generateClient } from 'aws-amplify/api'
 import type { Schema } from '../../../amplify/data/resource';
-import { View } from '@aws-amplify/ui-react'
+import { Authenticator, View } from '@aws-amplify/ui-react'
 import DefaultLayout from '@/components/DefaultLayout';
 
 const client = generateClient<Schema>()
@@ -45,11 +45,13 @@ const AIChatBot = () => {
   return (
     <DefaultLayout heading="Vipani ChatBot">
       <View flex={1} height="80vh">
+        <Authenticator>
         <AIConversation
           messages={messages}
           handleSendMessage={sendMessage}
           isLoading={isLoading}
         />
+        </Authenticator>
       </View>
     </DefaultLayout>
   );
